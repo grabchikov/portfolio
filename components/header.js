@@ -1,10 +1,10 @@
 class Header extends HTMLElement {
-    constructor() {
-      super();
-    }
-  
-    connectedCallback() {
-      this.innerHTML = `<div class="topnav" id="myTopnav">
+  constructor() {
+    super();
+  }
+
+  connectedCallback() {
+    this.innerHTML = `<div class="topnav" id="myTopnav">
   <a href="#home" class="active">Home</a>
   <a href="#news">News</a>
   <a href="#contact">Contact</a>
@@ -13,8 +13,7 @@ class Header extends HTMLElement {
     <i class="fa fa-bars"></i>
   </a>
 </div>`;
-    }
   }
-  
-  customElements.define("header-component", Header);
-  
+}
+
+customElements.define("header-component", Header);
