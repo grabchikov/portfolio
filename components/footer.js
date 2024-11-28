@@ -4,7 +4,9 @@ class Footer extends HTMLElement {
   }
 
   connectedCallback() {
-    this.innerHTML = `<footer><p>Hello, footer<p></footer>`;
+    const currentDate = new Date(); 
+    const currentYear = currentDate.getFullYear();
+    this.innerHTML = `<footer><p>© Pavel Grabchikov ${currentYear}<p></footer>`;
   }
 }
 

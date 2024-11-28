@@ -1,14 +1,14 @@
-class Header extends HTMLElement {
+class MainMenu extends HTMLElement {
   constructor() {
     super();
   }
 
   connectedCallback() {
     this.innerHTML = `<div class="topnav" id="myTopnav">
-  <a href="#home" class="active">Home</a>
-  <a href="#news">News</a>
-  <a href="#contact">Contact</a>
-  <a href="#about">About</a>
+  <a href="/index.html" class="active">Home</a>
+  <a href="/zorka.html">Zorka</a>
+  <a href="/onde.html">Onde</a>
+  <a href="/about_me.html">About Me</a>
   <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
     <i class="fa fa-bars"></i>
   </a>
@@ -16,4 +16,4 @@ class Header extends HTMLElement {
   }
 }
 
-customElements.define("header-component", Header);
+customElements.define("main-menu", MainMenu);
