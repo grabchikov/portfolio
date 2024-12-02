@@ -116,7 +116,7 @@
           <div class="flex-item-66 flexbox-vertical">
             <!-- First row -->
 
-            <div class="flexbox">
+            <div class="flexbox align-top">
               <div class="flex-item-33">
                 <h3>1. Empathize</h3>
                 <p>
@@ -141,7 +141,7 @@
 
             <!-- Second row -->
 
-            <div class="flexbox">
+            <div class="flexbox align-top">
               <div class="flex-item-33">
                 <h3>4. Prototype</h3>
                 <p>
@@ -166,7 +166,7 @@
             </div>
             <!-- end of horizontal flexbox (2nd row) -->
           </div>
-          <!-- end of vertival flexbox -->
+          <!-- end of vertical flexbox -->
 
           <!-- Process illustration takes 33% on wide screens -->
           <img
@@ -191,11 +191,13 @@
         </p>
         <div class="flexbox">
           <div class="flex-item-50">
-            <img
-              src="./img/the-georgious-zorka-team.png"
-              alt="The georgious Zorka team"
-            />
-            <p class="image-caption">Part of the Zorka team</p>
+            <div>
+              <img
+                src="./img/the-georgious-zorka-team.png"
+                alt="The georgious Zorka team"
+              />
+              <p class="image-caption">Part of the Zorka team</p>
+            </div>
           </div>
           <div class="flex-item-50">
             <div>
@@ -422,6 +424,7 @@
         <!-- end of four items (outer flexbox, column) -->
       </div>
       <!-- end of section -->
+
       <div class="section">
         <h2>Information Architecture</h2>
         <p>
@@ -434,8 +437,107 @@
           campaigns of this client. It saves a lot of time for the Platform
           users.
         </p>
-        
+        <img
+          src="./img/zorka-information-architecture.png"
+          width="100%"
+          alt="Information Architecture Diagram"
+        />
+        <p class="image-caption">Information Architecture Diagram</p>
+
+        <div class="slider">
+          <div class="slides">
+            <div class="slide">
+              <img
+                src="./img/zorka-information-architecture.png"
+                alt="Image 1"
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="./img/zorka-information-architecture.png"
+                alt="Image 2"
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="./img/zorka-information-architecture.png"
+                alt="Image 3"
+              />
+            </div>
+          </div>
+          <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+          <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+
+        <div
+          style="
+            text-align: center;
+            font-weight: bold;
+            vertical-align: middle;
+            background-color: yellow;
+            width: 100%;
+            height: 80px;
+          "
+        >
+          Change slide content
+        </div>
       </div>
+      <!-- End of the Information Architecture Section -->
+
+      <div class="section">
+        <div class="header-with-yellow-circle">
+          <div class="yellow-circle">2.</div>
+          <h2>Boost operations</h2>
+        </div>
+        <div class="flexbox">
+          <p class="flex-item-50">
+            The operational performance is to be improved. Together with the
+            team we found out that blogger search function, campaign management,
+            and some other functions could be completely redesigned and
+            improved. It was intended to save employee time and money for the
+            company
+          </p>
+          <img
+            class="flex-item-50"
+            src="./img/illustration-productive-person.png"
+            alt="extremely productive person"
+          />
+        </div>
+        <p>
+          Platform is the product where employee spend their significant part of
+          workday. 61% of the employee said that they spend more than 3 hours
+          per day, another 22,2% said they spend more then 6 hours per day.
+        </p>
+        <h2>Research results</h2>
+        <div class="flexbox">
+          <img
+            class="flex-item-50 box-shadow"
+            src="./img/zorka-diagram-time-on-influencer-search.png"
+            alt="diagram, time spent on influencer search"
+          />
+          <img
+            class="flex-item-50 box-shadow"
+            src="./img/zorka-diagram-time-on-platform.png"
+            alt="diagram, time spent on platform"
+          />
+        </div>
+        <p class="image-caption">
+          The research showed how time consuming working with the platform is
+          and how important it is to optimize it. Google Forms
+        </p>
+        <p>
+          From the research, I realized that optimizing the influence managers’
+          routine leads not only to cutting the corporate spendings on routine
+          tasks, but also to more employee satisfaction.
+        </p>
+      </div>
+      <!-- End of Boost Operations section -->
+
+      <div class="section">
+        <h2>Design Solutions</h2>
+        <p>Here are three examples of how we improved the performance.</p>
+      </div>
+      <!-- End of Design Solutions section -->
     </main>
     <footer-component></footer-component>
     <script src="main.js"></script>
